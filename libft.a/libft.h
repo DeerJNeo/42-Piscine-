@@ -7,6 +7,8 @@ int	ft_isalpha(char *str);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
 void ft_putchar(char c);
+int	ft_atoi(const char *str);
+
 
 
 #endif
