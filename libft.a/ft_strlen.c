@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/09 10:19:07 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/15 10:26:37 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/15 10:25:52 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/15 11:32:37 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
+#include "libft.h"
+#include <string.h>
 
-void	ft_putchar(char c)
+size_t	ft_strlen(const char *str)
 {
-	write(1, &c, 1);
+	size_t	lenght;
+
+	lenght = 0;
+	while (str[lenght] != '\0')
+	{
+		lenght++;
+	}
+	return (lenght);
 }

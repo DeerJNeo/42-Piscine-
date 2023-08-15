@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/09 10:19:07 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/15 10:26:37 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/15 10:22:23 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/15 11:31:01 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
+#include "libft.h"
 
-void	ft_putchar(char c)
+int	ft_isprint(int c)
 {
-	write(1, &c, 1);
+	if (c >= 31 && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }

@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/09 10:19:07 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/15 10:26:37 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/15 10:19:30 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/15 11:30:49 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
+#include "libft.h"
 
-void	ft_putchar(char c)
+int	ft_isascii(int c)
 {
-	write(1, &c, 1);
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }
