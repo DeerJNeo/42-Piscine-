@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/15 12:58:54 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/08/15 13:16:55 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRC = ft_strlen.c/
 	  ft_isascii.c/
 	  ft_isprint.c/
 	  ft_bzero.c/
-	  ft_strlcpy.c/
+	  ft_strlcat.c/
+	  ft_strncpm.c/
 	  
 OBJ = $(SRC:%.c=%.o)
 LIB = libft.a

@@ -6,7 +6,7 @@ int	ft_isalnum(int c);
 int	ft_isalpha(char *str);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
-void	ft_putchar(char c);
+void ft_putchar(char c);
 
 
 #endif
