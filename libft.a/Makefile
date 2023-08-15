@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/15 11:47:34 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/08/15 12:58:54 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,15 @@ AR = ar
 ARFLAGS = rc
 RM = rm -f
 
-SRC = ft_strlen.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_bzero.c
+SRC = ft_strlen.c/
+	  ft_isalpha.c/
+	  ft_isdigit.c/
+	  ft_isalnum.c/
+	  ft_isascii.c/
+	  ft_isprint.c/
+	  ft_bzero.c/
+	  ft_strlcpy.c/
+	  
 OBJ = $(SRC:%.c=%.o)
 LIB = libft.a
 HEADER = libft.h
