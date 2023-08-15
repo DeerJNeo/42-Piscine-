@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/15 13:16:55 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/08/15 13:39:34 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,9 @@ SRC = ft_strlen.c/
 	  ft_bzero.c/
 	  ft_strlcat.c/
 	  ft_strncpm.c/
-	  
+	  ft_putchar_fd.c/
+	  ft_tolower.c/
+	  ft_toupper.c/
 OBJ = $(SRC:%.c=%.o)
 LIB = libft.a
 HEADER = libft.h
