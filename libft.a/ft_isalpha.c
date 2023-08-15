@@ -6,12 +6,12 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 09:22:25 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/15 09:25:08 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/15 09:36:56 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(char *str)
 {
@@ -35,6 +35,6 @@ int	main(void)
 {
 	char test1[12] = "";
 	char test2[] = "Hello world!";
-	printf("result %d",  ft_str_is_alpha(test1));
+	printf("result %d",  ft_isalpha(test1));
 }
 */
