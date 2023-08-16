@@ -6,9 +6,11 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 10:56:49 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/16 13:51:33 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/16 14:46:48 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
