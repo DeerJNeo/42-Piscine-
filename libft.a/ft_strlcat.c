@@ -6,13 +6,11 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:59:57 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/15 13:08:10 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/16 10:13:09 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 int	ft_strlen(char *str)
 {

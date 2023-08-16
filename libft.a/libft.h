@@ -1,5 +1,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
+# define size_t unsigned int
 
 int	ft_isascii(int c);
 int	ft_isalnum(int c);
