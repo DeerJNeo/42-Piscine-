@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/09 10:19:07 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/16 12:23:58 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/16 09:20:10 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/16 11:51:13 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "libft.h" 
+#include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &c, 1);
+	int	i;
+
+	i = 0;
+	if (!s)
+	{
+		return ;
+	}
+	while (s[i])
+	{
+		ft_putstr_fd(s[i], fd);
+		i++;
+	}
 }
+
+// This ft_putnbr_fd function is used to print an integer value (int n) to a specified file descriptor (int fd).

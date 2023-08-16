@@ -1,20 +1,27 @@
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
-int	main(void)
+// int	main(void)
+// {
+// 	ft_isascii('c');
+
+// 	printf("%d", ft_isascii('c'));
+// }
+
+
+int main(void)
 {
-	ft_isascii('c');
+    int n = 12345;
+    int fd = 1; // Standardní výstup
+    char c = 'A';
 
-	printf("%d", ft_isascii('c'));
-}
+    ft_putnbr_fd(n, fd);
+    write(fd, "\n", 1); // Nový řádek pomocí write
 
-int main() {
-    const char *numberStr = "12345";
-
-    int number = ft_atoi(numberStr);
-
-    printf("Převedené číslo 1: %d\n", number);
+    ft_putchar_fd(c, fd);
+    write(fd, "\n", 1); // Nový řádek pomocí write
 
     return 0;
 }
