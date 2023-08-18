@@ -6,8 +6,15 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 09:22:25 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 12:08:20 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 13:12:28 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_isalpha(int i)
+{
+	if (('a' <= i && i <= 'z') || ('A' <= i && i <= 'Z')) 
+		return (1);
+	return (0);
+}

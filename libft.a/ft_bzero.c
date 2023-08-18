@@ -6,8 +6,21 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 11:47:46 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 12:08:26 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 13:12:17 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	char	*i;
+
+	i = s;
+	while (n)
+	{
+		*i = 0;
+		i++;
+		n--;
+	}
+}

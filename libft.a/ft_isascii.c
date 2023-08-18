@@ -6,8 +6,17 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:19:30 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 12:08:30 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 13:12:31 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_isascii(int c)
+{
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
+}
