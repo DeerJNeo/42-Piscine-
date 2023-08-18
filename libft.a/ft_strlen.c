@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:25:52 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/16 10:13:20 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 10:27:19 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t	lenght;
-
-	lenght = 0;
-	while (str[lenght] != '\0')
-	{
-		lenght++;
-	}
-	return (lenght);
+	
 }
