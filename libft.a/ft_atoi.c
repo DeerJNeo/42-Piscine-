@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 14:44:55 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 13:44:08 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 14:03:05 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ int	ft_atoi(const char *str)
 		}
 		return (result * sign);
 	}
+	return (0);
 }
