@@ -6,16 +6,8 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 13:20:44 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/16 10:13:58 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 12:14:07 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_toupper(int c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
-}

@@ -6,13 +6,8 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 09:20:10 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/17 14:13:12 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/18 12:10:36 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_putstr_fd(char *s, int fd)
-{
-	write(fd, s, ft_strlen(s));
-}
