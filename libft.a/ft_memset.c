@@ -6,13 +6,13 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:09:55 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/23 11:57:51 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 12:37:03 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	*ft_memset(void *b, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t n)
 {
 	size_t	i;
 
