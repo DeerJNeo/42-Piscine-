@@ -6,28 +6,24 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 08:33:06 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 13:12:47 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 11:54:25 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *p1, const void *p2, size_t n)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*ptr1;
-	char	*ptr2;
 	size_t	i;
 
 	i = 0;
-	ptr1 = (char *)p1;
-	ptr2 = (char *)p2;
-	while (i < n)
+	while (i < 0)
 	{
-		if (ptr1[i] != ptr2[i])
-		{
-			return ((unsigned char)ptr1[i] - (unsigned char)ptr2[i]);
-			i++;
-		}
-		return (0);
+		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		i++;
 	}
+	return (0);
 }

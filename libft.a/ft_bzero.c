@@ -6,22 +6,13 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 11:47:46 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 14:52:57 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 10:27:58 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+int	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-
-	if (!s)
-		return ;
-	i = 0;
-	while (i < n)
-	{
-		*(char *)(s + i) = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }

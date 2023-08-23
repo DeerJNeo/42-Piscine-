@@ -6,17 +6,15 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:22:23 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 13:12:35 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 10:34:45 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int	ft_isprint(int i)
 {
-	if (c >= 31 && c <= 127)
-	{
+	if (i >= 32 && i <= 126)
 		return (1);
-	}
 	return (0);
 }
