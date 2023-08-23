@@ -6,37 +6,54 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:08:48 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 12:08:59 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 14:24:06 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_itoa(int n)
+static	unsigned int	ft_number_size(int number)
 {
-    char    *str;
-    long    nbr;
-    size_t  size;
+	unsigned int	lenght;
 
-    nbr = n;
-    size = n > 0 ? 0 : 1;
-    nbr = nbr > 0 ? nbr : -nbr;
-    while (n)
-    {
-        n /= 10;
-        size++;
-    }
-    if (!(str = (char *)malloc(size + 1)))
-        return (0);
-    *(str + size--) = '\0';
-    while (nbr > 0)
-    {
-        *(str + size--) = nbr % 10 + '0';
-        nbr /= 10;
-    }
-    if (size == 0 && str[1] == '\0')
-    *(str + size) = '0';
-    else if (size == 0 && str[1] != '\0')
-        *(str + size) = '-';
-        return (str);
+	lenght = 0;
+	if (number == 0)
+		return (1);
+	if (number < 0)
+		lenght += 1;
+	while (number != 0)
+	{
+		number /= 10;
+		lenght++;
+	}
+	return (lenght);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*s;
+	unsigned int	len;
+
+	len = ft_number_size(n);
+	s = (char *)malloc(sizeof(char) * (len + 1));
+	if (!s)
+		return (NULL);
+	s[len] = '\0';
+	if (n == 0)
+	{
+		*s = '0';
+	}
+	else if (n < 0)
+	{
+		if (n == -2147483648)
+			return ("-2147483648");
+		*s = '-';
+		n = -n;
+	}
+	while (n)
+	{
+		s[--len] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (s);
 }

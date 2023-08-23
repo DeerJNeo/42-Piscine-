@@ -6,15 +6,15 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:19:30 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/18 12:08:30 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/23 10:31:14 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int i)
+int	ft_isascii(int i)
 {
-    if (i >= 0 && i <= 127)
-        return (1);
-    return (0);
+	if (i >= 0 && i <= 127)
+		return (1);
+	return (0);
 }
