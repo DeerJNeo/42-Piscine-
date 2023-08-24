@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/18 12:22:45 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/08/24 13:45:58 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ SRC =	ft_atoi.c\
 		ft_split.c\
 		ft_strchr.c\
 		ft_striteri.c\
+		ft_strdup.c\
 		ft_strjoin.c\
 		ft_strlcat.c\
 		ft_strlcpy.c\
