@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/24 13:45:58 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/08/24 13:54:29 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ RM = rm -f
 
 SRC =	ft_atoi.c\
 		ft_bzero.c\
+		ft_calloc.c\
 		ft_isalnum.c\
 		ft_isalpha.c\
 		ft_isascii.c\
