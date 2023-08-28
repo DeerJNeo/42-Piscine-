@@ -5,79 +5,74 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/18 12:11:20 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/25 14:29:17 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/28 10:51:33 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/28 12:31:36 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static  int count_strings(char const *s, char c)
+static	int	ft_count_parts(const char *str, char c)
 {
-    int i;
-    int count;
+	int	count;
+	int	i;
 
-    count = 0;
-    i = 0;
-    while (s[i])
-    {
-        while (s[i] && s[i] == c)
-            i++;
-        if (s[i])
-            count++;
-        while (s[i] && s[i] != c)
-            i++;
-    }
-    return (count);
+	count = 0;
+	i = 0;
+	while (str[i])
+	{
+		while (str[i] == c)
+			i++;
+		if (str[i])
+			count++;
+		while (str[i] && str[i] != c)
+			i++;
+	}
+	return (count);
 }
 
-static  int str_sep_len(char const *s, char c)
+char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
-    int i;
+	size_t	i;
 
-    i = 0;
-    while (s[i] && s[i] != c)
-        i++;
-    return (i);
+	i = 0;
+	while (i < n)
+	{
+		if (src[i])
+			dest[i] = src[i];
+		else
+			dest[i] = 0;
+		i++;
+	}
+	return (dest);
 }
 
-static  char    *str_sepdup(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-    char    *word;
-    int     i;
-    int     len;
+	char	**str;
+	int		parts;
+	char	*start;
+	int		i;
 
-    i = 0;
-    len = str_sep_len(s, c);
-    word = (char *)malloc((len + 1) * sizeof(char));
-    if (!word)
-        return (NULL);
-    while (i < len)
-    {
-        word[i] = s[i];
-        i++;
-    }
-    word[i] = '\0';
-    return (word);
-}
-
-char    **ft_split(char const *s, char c)
-{
-    char    **strings;
-    int     i;
-
-    i = 0;
-    strings = (char **)malloc(sizeof(char *)
-            * (count_strings(s, c) + 1));
-    while (*s)
-    {
-        while (*s && *s == c)
-            s++;
-        if (*s)
-            strings[i++] = str_sepdup(s, c);
-        while (*s && *s != c)
-            s++;
-    }
-    strings[i] = 0;
-    return (strings);
+	parts = ft_count_parts(s, c);
+	str = malloc(sizeof(char *) * (parts + 1));
+	if (!str)
+		return (0);
+	i = 0;
+	while (i < parts)
+	{
+		while (*s == c)
+			s++;
+		start = (char *)s;
+		while (*s && *s != c)
+			s++;
+		str[i] = (char *)malloc(s - start + 1);
+		if (!str[i])
+			return (0);
+		ft_strncpy(str[i], start, s - start);
+		str[i][s - start] = 0;
+		i++;
+	}
+	str[i] = 0;
+	return (str);
 }
