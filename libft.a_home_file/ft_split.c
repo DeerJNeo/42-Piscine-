@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 10:51:33 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/28 12:31:36 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/29 14:27:30 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static	int	ft_count_parts(const char *str, char c)
 	return (count);
 }
 
-char	*ft_strncpy(char *dest, const char *src, size_t n)
+static	char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	size_t	i;
 
