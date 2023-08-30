@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:11:47 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/24 13:47:59 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/28 10:11:30 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		return (ft_strdup(s1));
 	if (!s1 && s2)
 		return (ft_strdup(s2));
-
 	lenght_s1 = ft_strlen((char *)s1);
 	lenght_s2 = ft_strlen(s2);
 	total_s_lenght = lenght_s1 + lenght_s2 + 1;

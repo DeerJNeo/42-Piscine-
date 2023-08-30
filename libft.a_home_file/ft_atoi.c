@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 14:44:55 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/23 10:27:30 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/29 12:51:26 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ int	ft_atoi(const char *str)
 
 // int	main()
 // {
-// 	const char *numStr = "   +-12345";
-// 	int	number = ft_atoi(numStr);
+// 	const char *num_str = "-+12345";
+// 	int	number = ft_atoi(num_str);
 // 	printf("Converted number: %d\n", number);
 
 // 	return 0;

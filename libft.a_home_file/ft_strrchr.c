@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:13:09 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/29 14:26:21 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:11:05 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	if (!s)
 		return (NULL);
-	pointer = (char *)s;	
+	pointer = (char *)s;
 	lastpointer = 0;
 	while (*pointer)
 	{
@@ -31,4 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)pointer);
 	return (lastpointer);
 }
-

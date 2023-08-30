@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 10:51:33 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/29 14:27:30 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:10:09 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	parts = ft_count_parts(s, c);
-	str = malloc(sizeof(char *) * (parts + 1));
+	str = (char **)malloc(sizeof(char *) * (parts + 1));
 	if (!str)
 		return (0);
 	i = 0;
@@ -70,8 +70,7 @@ char	**ft_split(char const *s, char c)
 		if (!str[i])
 			return (0);
 		ft_strncpy(str[i], start, s - start);
-		str[i][s - start] = 0;
-		i++;
+		str[i++][s - start] = 0;
 	}
 	str[i] = 0;
 	return (str);

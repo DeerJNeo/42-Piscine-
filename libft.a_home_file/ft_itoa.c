@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:08:48 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/23 14:24:06 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/28 10:18:13 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static	unsigned int	ft_number_size(int number)
 
 char	*ft_itoa(int n)
 {
-	char	*s;
+	char			*s;
 	unsigned int	len;
 
 	len = ft_number_size(n);

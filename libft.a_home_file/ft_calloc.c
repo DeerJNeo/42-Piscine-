@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 13:53:30 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/24 15:37:05 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/24 13:53:24 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/08/28 10:11:41 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	rtn = malloc(size * count);
 	if (!rtn)
-		return NULL;
+		return (NULL);
 	ft_bzero(rtn, count);
 	return (rtn);
 }
