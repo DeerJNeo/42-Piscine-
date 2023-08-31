@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 12:59:57 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/29 14:26:49 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/31 10:37:00 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dstl + cpyl] = '\0';
 	return (dstl + srcl);
 }
-
-// int main() {
-//     char destination[20] = "Hello, ";
-//     char source[] = "world!";
-//     size_t result = ft_strlcat(destination, source, sizeof(destination));
-//     printf("Spojený řetězec: %s\n", destination);
-//     printf("Celková délka: %zu\n", result);
-//     return 0;
-// }

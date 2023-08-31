@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:09:41 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/30 11:32:56 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/08/31 10:28:43 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if ((size_t)dest - (size_t)src < n)
 	{
 		i = n - 1;
-		while (i >= 0 && i < n)
+		while (i < n)
 		{
 			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i--; 
