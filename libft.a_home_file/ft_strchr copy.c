@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/15 12:59:57 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/31 10:37:00 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/17 13:30:22 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/09/05 18:21:40 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+char	*ft_strchr(const char *s, int i)
 {
-	size_t	dstl;
-	size_t	srcl;
-	size_t	cpyl;
-
-	dstl = ft_strlen(dest);
-	srcl = ft_strlen(src);
-	cpyl = size - dstl - 1;
-	if (size <= dstl)
+	while (*s)
 	{
-		return (srcl + size);
+		if (*s == (char)i)
+			return ((char *)s);
+		s++;
 	}
-	ft_memcpy(dest + dstl, src, cpyl);
-	dest[dstl + cpyl] = '\0';
-	return (dstl + srcl);
+	if (i == '\0')
+		return ((char *)s);
+	return (0);
 }

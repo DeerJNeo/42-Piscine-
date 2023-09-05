@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/09/05 15:02:10 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/09/05 18:06:47 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,11 +59,13 @@ BONUS_OBJS		= $(BONUS:.c=.o)
 
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
-
+CFLAGS			= -Wall -Wextra -Werror
 NAME			= libft.a
 
 all:			$(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)

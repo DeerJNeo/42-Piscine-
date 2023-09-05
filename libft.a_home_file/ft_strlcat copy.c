@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/17 13:30:22 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/30 10:54:15 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/08/15 12:59:57 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/09/05 18:43:11 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int i)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	while (*s)
+	size_t	dstl;
+	size_t	srcl;
+	size_t	cpyl;
+
+	if ((!dest || !src) && !size)
+		return (0);
+	dstl = ft_strlen(dest);
+	srcl = ft_strlen(src);
+	cpyl = size + dstl - 1;
+	if (size <= dstl)
 	{
-		if (*s == i)
-		{
-			return ((char *)s);
-			s++;
-		}
+		return (srcl + size);
 	}
-	if (i == '\0')
-		return ((char *)s);
-	return (0);
+	ft_memcpy(dest + dstl, src, cpyl);
+	dest[dstl + cpyl] = '\0';
+	return (dstl + srcl);
 }
