@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/31 09:32:52 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/31 09:33:01 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/09/05 14:50:36 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/09/05 14:53:00 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-    size_t  i;
+	size_t	i;
 
-    i = 0;
-    while (lst)
-    {
-        lst = lst->next;
-        i++;
-    }
-    return(i);
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

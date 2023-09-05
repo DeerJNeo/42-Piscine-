@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/31 09:31:51 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/31 09:32:02 by kjelinek         ###   ########.fr       */
+/*   Created: 2023/09/05 14:53:41 by kjelinek          #+#    #+#             */
+/*   Updated: 2023/09/05 14:56:11 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	ft_lstiter(t_list *lst, void (*f)(void*))
 {
 	if (!f)
-        return ;
-    while (lst)
-    {
-        (*f)(lst->content);
-        lst = lst->next;
-    }
+		return ;
+	while (lst)
+	{
+		(*f)(lst->content);
+		lst = lst->next;
+	}
 }

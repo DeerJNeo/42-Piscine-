@@ -6,7 +6,7 @@
 /*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 09:35:06 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/31 11:35:31 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/09/05 15:00:12 by kjelinek         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *current;
+	t_list	*current;
 
 	if (!new)
 		return ;

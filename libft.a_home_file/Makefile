@@ -6,7 +6,7 @@
 #    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/08/31 10:54:15 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/09/05 15:02:10 by kjelinek         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,6 @@ BONUS			=	ft_lstadd_back.c \
 					ft_lstdelone.c \
 					ft_lstiter.c \
 					ft_lstlast.c \
-					ft_lstmap.c \
 					ft_lstnew.c \
 					ft_lstsize.c
 BONUS_OBJS		= $(BONUS:.c=.o)
