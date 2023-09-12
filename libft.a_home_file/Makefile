@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+         #
+#    By: k <k@student.42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/09/05 18:06:47 by kjelinek         ###   ########.fr        #
+#    Updated: 2023/09/12 09:38:06 by k                ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,6 @@ SRCS			=	ft_atoi.c \
 					ft_split.c \
 					ft_strchr.c \
 					ft_strdup.c \
-					ft_strlcat.c \
 					ft_strncmp.c \
 					ft_striteri.c \
 					ft_strjoin.c \
@@ -57,7 +56,7 @@ BONUS			=	ft_lstadd_back.c \
 					ft_lstsize.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-CC				= gcc
+CC				= cc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror
 NAME			= libft.a
