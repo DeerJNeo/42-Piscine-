@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
+/*   By: k <k@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 10:13:56 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/09/05 18:43:03 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/09/12 15:39:48 by k                ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <limits.h>
 
 typedef struct s_list
 {
