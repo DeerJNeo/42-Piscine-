@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
+/*   By: k <k@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:08:48 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/09/05 18:29:00 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/09/15 14:39:48 by k                ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_itoa(int n)
 	unsigned int	len;
 
 	len = ft_number_size(n);
-	s = (char *)malloc(sizeof(char) * (len + 1));
+	s = malloc(sizeof(char) * (len + 1));
 	if (!s)
 		return (NULL);
 	s[len] = '\0';
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 	else if (n < 0)
 	{
 		if (n == -2147483648)
-			return ("-2147483648");
+			return (ft_strdup("-2147483648"));
 		*s = '-';
 		n = -n;
 	}
