@@ -6,7 +6,7 @@
 #    By: k <k@student.42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 13:26:47 by kjelinek          #+#    #+#              #
-#    Updated: 2023/09/12 09:38:06 by k                ###   ########.fr        #
+#    Updated: 2023/09/15 07:55:10 by k                ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ BONUS			=	ft_lstadd_back.c \
 					ft_lstsize.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-CC				= cc
+CC				= gcc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror
 NAME			= libft.a
