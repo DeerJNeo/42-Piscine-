@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
+/*   By: k <k@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:09:16 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/09/05 18:33:13 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/09/16 17:07:08 by k                ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (char *)dest;
 	s = (char *)src;
+
+	if (d == NULL && s == NULL)
+	{
+		return (NULL);
+	}
+	
 	while (i < n)
 	{
 		d[i] = s[i];

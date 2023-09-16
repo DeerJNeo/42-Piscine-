@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjelinek < kjelinek@student.42prague.co    +#+  +:+       +#+        */
+/*   By: k <k@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 12:13:09 by kjelinek          #+#    #+#             */
-/*   Updated: 2023/08/30 13:11:05 by kjelinek         ###   ########.fr       */
+/*   Updated: 2023/09/16 17:09:18 by k                ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strrchr(const char *s, int c)
 	char	*pointer;
 	char	*lastpointer;
 
-	if (!s)
-		return (NULL);
 	pointer = (char *)s;
 	lastpointer = 0;
 	while (*pointer)
