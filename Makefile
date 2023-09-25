@@ -6,38 +6,35 @@
 #    By: k <k@student.42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/13 16:51:21 by k                 #+#    #+#              #
-#    Updated: 2023/09/13 17:11:10 by k                ###   ########.fr        #
+#    Updated: 2023/09/25 15:52:08 by k                ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libftprintf.a
+NAME	= libftprintf.a
 
-SRCS = ft_printf.c \
+SRCS	= ./srcs/ft_printf.c \
+	   	./srcs/ft_numbers.c \
+		./srcs/ft_words.c \
 
-OBJS = $(SRCS:.c=.o)
+OBJS	= $(SRCS:.c=.o)
 
-CC = gcc
-CFLAGS = -Wall -Wextra - Werror
-LIBFT_DIR = ./libft
-LIBFT = $(LIBFT_DIR)/libft.a
-HEADER = ft_printf.h
+CC	= cc
 
-all: $(NAME)
+RM	= rm -f
 
-$(NAME): $(OBJS)
-	@make -C $(LIBFT_DIR)
-	@cp $(LIBFT) $(NAME)
-	@ar rcs $(NAME) $(OBJS)
+CFLAGS	= -Wall -Wextra -Werror
 
-%.o: %.c $(HEADER)
-	$(CC) $(CFLAGS) -c $< -o $@
+all:	$(NAME)
+
+$(NAME):	$(OBJS)
+			ar rcs $(NAME) $(OBJS)
+
 clean:
-	@make clean -C $(LIBFT_DIR)
-	@rm -f $(OBJS)
+			$(RM) $(OBJS)
 
-fclean: clean
-	@make fclean -C $(LIBFT_DIR)
-	@rm -f $(NAME)
+fclean:		clean
+			$(RM) $(NAME)
 
-re: fclean all
-.PHONY: all clean fclean re
+re:			fclean all
+
+.PHONY:		all clean fclean re
